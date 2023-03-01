@@ -18,9 +18,18 @@ body {
 }
 
 .square {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   border: 1px solid white;
-  font-size: 2em;
+  background-color: black;
+  color: white;
+  /* font-size: 2em; */
+}
+
+.sq-btn {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
 }
