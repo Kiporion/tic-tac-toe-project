@@ -1,35 +1,32 @@
-body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
-  background-color: black;
-  color: greenyellow;
+.cell {
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
 }
-
-#sign-in {
-  padding: 50px;
+#gameContainer {
+  text-align: center;
 }
-
-.game-board {
+#cellContainer {
   display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
 }
-
-.square {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+#restart {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 90px;
+  font-weight: 600;
+  font-size: 1em;
+}
+#restart:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
   border: 1px solid white;
-  background-color: black;
-  color: white;
-  /* font-size: 2em; */
-}
-
-.sq-btn {
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
 }
